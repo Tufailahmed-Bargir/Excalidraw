@@ -1,5 +1,5 @@
 export interface Shape {
-  type: 'rectangle' | 'circle' | 'triangle' | 'star' | 'hexagon' | 'pentagon';
+  type: "rectangle" | "circle" | "triangle" | "star" | "hexagon" | "pentagon";
   x: number;
   y: number;
   width: number;

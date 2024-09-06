@@ -1,6 +1,11 @@
-import React from 'react';
+import React from "react";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { ToolButton, ShapeDropdown, ColorPicker, StrokeWidthSlider } from "./DrawingUI";
+import {
+  ToolButton,
+  ShapeDropdown,
+  ColorPicker,
+  StrokeWidthSlider,
+} from "./DrawingUI";
 import { Pen, MousePointer, Eraser, Trash2, Move } from "lucide-react";
 
 interface ToolbarProps {
@@ -27,10 +32,10 @@ export const Toolbar: React.FC<ToolbarProps> = ({
   setSelectedShape,
 }) => {
   const toolButtons = [
-    { name: 'pen', icon: Pen, tooltip: 'Pen' },
-    { name: 'select', icon: MousePointer, tooltip: 'Select' },
-    { name: 'eraser', icon: Eraser, tooltip: 'Eraser' },
-    { name: 'pan', icon: Move, tooltip: 'Pan' },
+    { name: "pen", icon: Pen, tooltip: "Pen" },
+    { name: "select", icon: MousePointer, tooltip: "Select" },
+    { name: "eraser", icon: Eraser, tooltip: "Eraser" },
+    { name: "pan", icon: Move, tooltip: "Pan" },
   ];
 
   return (
@@ -50,8 +55,14 @@ export const Toolbar: React.FC<ToolbarProps> = ({
             ))}
           </div>
           <ShapeDropdown onSelectShape={setSelectedShape} />
-          <ColorPicker color={color} onChange={(e) => setColor(e.target.value)} />
-          <StrokeWidthSlider strokeWidth={strokeWidth} onChange={(value: number[]) => setStrokeWidth(value[0])} />
+          <ColorPicker
+            color={color}
+            onChange={(e) => setColor(e.target.value)}
+          />
+          <StrokeWidthSlider
+            strokeWidth={strokeWidth}
+            onChange={(value: number[]) => setStrokeWidth(value[0])}
+          />
           {selection && (
             <ToolButton
               name="delete"
