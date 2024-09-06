@@ -4,15 +4,22 @@
 ## Demo :
 https://github.com/user-attachments/assets/e7afaff2-878a-4127-a25f-3815d0e4b6d0
 
-## Screenshort :
-![Screenshot 2024-09-05 231158](https://github
+## Screenshot :
+![Screenshot 2024-09-05 231321](https://github.com/user-attachments/assets/61c17911-2ba3-4c41-921e-85e20b05e00b)
+
  
  
 ## Tech Stack Used
 
-- Front End - **Nextjs**, **tailwindCSS**, **Shadcn UI**
-- Back End - **Nextjs**,
- 
+- [Next.js](https://nextjs.org/docs)
+- [TypeScript](https://www.typescriptlang.org/docs/)
+- [pnpm](https://pnpm.io/installation)
+- [Shadcn UI](https://ui.shadcn.com/docs)
+- [Radix UI](https://www.radix-ui.com/docs)
+- [React Resizable Panels](https://github.com/bokuweb/react-resizable-panels#readme)
+- [Hero Icons](https://heroicons.com/)
+- [Prettier](https://prettier.io/docs/en/index.html)
+- [Husky](https://typicode.github.io/husky/#/)
 
 ## How to run?
 
